@@ -1,15 +1,29 @@
-# 🛡️ Security Placeholder: khttp
+# ⚠️ Security Notice: Namespace Takeover
 
-> **NOTICE:** This repository is a defensive placeholder maintained by **[LABS @ ITRES](https://labs.itresit.es)**.
+This repository and its associated namespace have been claimed as part of a security research project demonstrating **Supply Chain** impact using reborn namespaces in JitPack coordinates.
 
-The original library `com.github.jkcclemens:khttp` is **abandoned**. The original author's namespace was deleted and left open for registration.
+**This is a benign placeholder. No malicious code is being distributed or published from this repository.**
 
-To prevent malicious actors from claiming this namespace and injecting malware into builds that still reference it, we have claimed it defensively.
+## 📖 The Research
 
-## ⚠️ Action Required
+To understand how this namespace was taken over, the implications for the software supply chain, and how to mitigate this type of vulnerability, please read our full disclosure:
 
-**This dependency is dead.** You should remove it from your project immediately and migrate to a maintained alternative (like Ktor, OkHttp, or Retrofit).
+🔗 **[Supply Chain Necromancy: Reborn namespaces in JitPack coordinates](https://labs.itresit.es/2026/02/18/supply-chain-necromancy-reborn-namespaces-in-jitpack-coordinates/)**
+
+## 🛠️ Action Required
+
+The original **khttp** library is abandoned and no longer maintained. 
+
+Continuing to use these coordinates (`jkcclemens/khttp`) via services like JitPack exposes your software supply chain to hijacking risks. We strongly advise that you **remove this dependency** from your projects and migrate to modern, actively maintained alternatives (such as OkHttp, Ktor, or similar libraries).
 
 ```gradle
 // REMOVE THIS LINE FROM YOUR BUILD:
 implementation 'com.github.jkcclemens:khttp:x.y.z'
+```
+---
+
+*This proof of concept was conducted by LABS @ ITRES for educational and responsible disclosure purposes.*
+
+
+
+
